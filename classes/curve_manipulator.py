@@ -3,9 +3,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from typing import List, Tuple, Dict, Set
 from scipy.stats import wasserstein_distance
-from data_loader import DataLoader
-from curve_analysis import CurveAnalysis
-from compound_matcher import CompoundMatcher
+from .data_loader import DataLoader
+from .curve_analysis import CurveAnalysis
+from .compound_matcher import CompoundMatcher
 
 class CurveManipulator:
     """Class for manipulating and morphing curves."""
