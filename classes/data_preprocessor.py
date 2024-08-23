@@ -1,3 +1,6 @@
+import pandas as pd
+from typing import List, Tuple
+
 class DataPreprocessor:
     """Class for preprocessing data."""
 

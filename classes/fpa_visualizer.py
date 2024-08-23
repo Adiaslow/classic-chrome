@@ -1,3 +1,7 @@
+import matplotlib.pyplot as plt
+from typing import List, Dict, Any
+from fpa_data_preprocessor import FPADataPreprocessor
+
 class FPAVisualizer:
     def __init__(self, data_preprocessor: 'FPADataPreprocessor'):
         self.data_preprocessor = data_preprocessor

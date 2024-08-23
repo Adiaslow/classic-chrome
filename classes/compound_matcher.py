@@ -1,3 +1,8 @@
+import itertools
+from typing import List, Tuple, Set, Dict
+import pandas as pd
+
+
 class CompoundMatcher:
     """Class for matching and optimizing compounds."""
 

@@ -1,3 +1,7 @@
+import numpy as np
+from typing import List, Tuple, Dict, Set
+from scipy.stats import wasserstein_distance
+
 class CurveAnalysis:
     """Class for analyzing and comparing curves."""
 

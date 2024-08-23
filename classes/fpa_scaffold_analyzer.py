@@ -1,3 +1,9 @@
+import pandas as pd
+from typing import Tuple, List, Set, Dict
+from fpa_data_preprocessor import FPADataPreprocessor
+from fpa_peak_detector import FPAPeakDetector
+
+
 class FPAScaffoldAnalyzer:
     def __init__(self, data_preprocessor: FPADataPreprocessor, peak_detector: FPAPeakDetector):
         self.data_preprocessor = data_preprocessor

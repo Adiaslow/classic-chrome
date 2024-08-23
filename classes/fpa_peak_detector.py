@@ -1,3 +1,15 @@
+import numpy as np
+from typing import List, Dict
+from scipy.signal import savgol_filter
+from scipy.sparse import diags
+from scipy.sparse.linalg import spsolve
+from scipy.stats import wasserstein_distance
+from scipy.optimize import linear_sum_assignment
+from scipy.spatial.distance import cdist
+from scipy.ndimage import gaussian_filter1d
+from scipy.signal import find_peaks
+
+
 class FPAPeakDetector:
     @staticmethod
     def find_consensus_peak(chromatograms: List[Dict], known_peaks: Dict[str, float], compound_type: str, truncations: List[str]) -> Dict:
