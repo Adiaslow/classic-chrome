@@ -1,11 +1,11 @@
 import numpy as np
 from typing import List, Tuple, Dict, Set
 from scipy.stats import wasserstein_distance
-from fpa_data_preprocessor import FPADataPreprocessor
-from fpa_peak_detector import FPAPeakDetector
-from fpa_truncation_analyzer import FPATruncationAnalyzer
-from fpa_visualizer import FPAVisualizer
-from curve_analysis import CurveAnalysis
+from .fpa_data_preprocessor import FPADataPreprocessor
+from .fpa_peak_detector import FPAPeakDetector
+from .fpa_truncation_analyzer import FPATruncationAnalyzer
+from .fpa_visualizer import FPAVisualizer
+from .curve_analysis import CurveAnalysis
 
 class FPACompoundAnalyzer:
     def __init__(self, data_preprocessor: FPADataPreprocessor, peak_detector: FPAPeakDetector, truncation_analyzer: FPATruncationAnalyzer):

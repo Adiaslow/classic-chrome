@@ -1,8 +1,8 @@
 import numpy as np
 from typing import List, Tuple, Dict, Set
 from scipy.stats import wasserstein_distance
-from fpa_data_preprocessor import FPADataPreprocessor
-from fpa_peak_detector import FPAPeakDetector
+from .fpa_data_preprocessor import FPADataPreprocessor
+from .fpa_peak_detector import FPAPeakDetector
 
 class FPATruncationAnalyzer:
     def __init__(self, data_preprocessor: 'FPADataPreprocessor', peak_detector: 'FPAPeakDetector'):
